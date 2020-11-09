@@ -1,0 +1,302 @@
+/* 초기화 */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
+}
+#main-page{
+    /* 백그라운드 */
+    background:url(image/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+}
+.main-navi{
+    padding:0 151.5px;
+    height: 80px;
+    background-color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.main-navi .logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.main-navi .logo i{
+    font-size: 40px;
+    margin-right: 7px;
+}
+.main-navi .logo a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #FF385C !important;
+    font-weight: 900;
+    display: flex;
+}
+.main-navi .search{
+    width: 300px;
+    height: 48px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 25px;
+    align-items: center;
+    outline: none;
+    font-weight: 900;
+    background-color: white
+}
+.main-navi .search .r-icon{
+    background-color:#FF385C;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    padding:0;
+    height: 80px;
+    background-color: white; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu .menu1{
+    width: 120px;
+    height: 36px;
+    border: 1px solid white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 20px;
+    align-items: center;
+    outline: none;
+    font-weight: 900;
+    background-color: white;
+    font-size: 15px;
+}
+.menu .r-icon2{
+    width: 50px;
+    height: 36px;
+    border: 1px solid white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 5px;
+    align-items: center;
+    outline: none;
+    font-weight: 900;
+    background-color:white;
+    font-size: 15px;
+}
+.menu .r-icon3{
+    width: 75px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+    align-items: center;
+    outline: none;
+    font-weight: 900;
+    background-color:white;
+    font-size: 30px; 
+}
+.main-navi .search:hover{
+    box-shadow: 0px 5px 0px 0px lightgrey;
+    cursor: pointer;
+}
+.menu .menu1:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.menu .r-icon2:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.menu .r-icon3:hover{
+    box-shadow: 0px 5px 0px 0px lightgrey;
+    cursor: pointer;
+}
+.main-title{
+    color: white;
+    margin: 250px 0 0 170px;
+}
+.main-button{
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#local{
+    background-color: white;
+    margin: 50px 0 50px 0px;
+    
+}
+#local .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 100px 0px 160px;
+}
+#local .item1{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 501px;
+}
+#local .item2{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 501px;
+}
+#local .item3{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 501px;
+}
+#local .pic{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 500px;
+}
+#local .text{
+    padding: 5px 0 10px 15px;
+}
+
+#local .big{
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+#local .small{
+    font-size: small;
+    color: grey;
+}
+
+#everywhere{
+    background-color: black;
+    color: white;
+    margin: 0 0 0 0;
+    display: flex;    
+}
+#everywhere .one{
+    font-size: 30px;
+    font-weight: 900;
+    padding: 50px 0 50px 160px;
+}
+#everywhere .two{
+    font-size: 15px;
+}
+#everywhere .three{
+        display: flex;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        font-weight: 900;
+        height: 30px;
+        border-radius: 10px;
+        align-self: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        margin-left: 1040px;
+}
+#everywhere .grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 150px 70px 150px;
+}
+#everywhere .item1{
+    border-radius: 20px;
+    background-color: rgb(42, 37, 37);  
+    grid-column: span 2;
+    grid-row: span 2;
+    margin: 10px;
+}
+#everywhere .item2{
+    border-radius: 20px;
+    background-color: lightgray;
+    background-color: rgb(42, 37, 37);
+    margin: 10px;
+}
+#everywhere .item3{
+    border-radius: 20px;
+    background-color: lightgray;
+    background-color: rgb(42, 37, 37);
+    margin: 10px;
+}
+#everywhere .item4{
+    border-radius: 20px;
+    background-color: lightgray;
+    background-color: rgb(42, 37, 37);
+    grid-column: span 2;
+    margin: 10px;
+}
+#everywhere .photo1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+}
+#everywhere .photo2{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+#everywhere .photo3{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+}
+#everywhere .photo4{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+#everywhere .text1{
+    padding: 10px 0 30px 20px;
+    font-weight: 900;
+}
+#everywhere .text2{
+    padding: 10px 0 30px 20px;
+    font-weight: 900;
+}
+#everywhere .text3{
+    padding: 10px 0 30px 20px;
+    font-weight: 900;
+}
+#everywhere .text4{
+    padding: 10px 0 30px 20px;
+    font-weight: 900;
+}
+#list{
+    width: 1700px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 150px 0px 160px;
+    padding-right: 100px;
+    font-size: small;
+    
+}
+#list .list-a{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#footer{
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 160px;
+    
+}
+#footer .footer-a{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+ 
